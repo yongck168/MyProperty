@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en-MY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: Browser title -->
+  <title>Calvin Yong | Real Estate Negotiator in Kuala Lumpur</title>
+  <!-- EDIT: Search description -->
+  <meta name="description" content="Explore condos, commercial shoplots and investment properties with Calvin Yong, REN80547, serving Bandar Sunway, Desa Petaling, Happy Garden and Kuchai Lama.">
+  <!-- EDIT: Theme color -->
+  <meta name="theme-color" content="#0b1f33">
+  <!-- EDIT: Replace with the published page URL -->
+  <link rel="canonical" href="https://example.com/calvin-yong">
+  <meta property="og:type" content="website">
+  <!-- EDIT: Open Graph title -->
+  <meta property="og:title" content="Calvin Yong | Your Property Search, Made Clearer">
+  <!-- EDIT: Open Graph description -->
+  <meta property="og:description" content="Personal property guidance for buyers, families and investors across key Kuala Lumpur neighbourhoods.">
+  <!-- EDIT: Replace with the published page URL -->
+  <meta property="og:url" content="https://example.com/calvin-yong">
+  <!-- EDIT: Replace with a 1200x630 social sharing image -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=85">
+  <!-- EDIT: Open Graph image description -->
+  <meta property="og:image:alt" content="A refined modern property interior represented by Calvin Yong">
+  <meta property="og:locale" content="en_MY">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* EDIT: Brand palette, spacing and shape tokens */
+    :root {
+      --navy: #0b1f33;
+      --navy-2: #102a44;
+      --gold: #c9a45c;
+      --gold-light: #e5ce9c;
+      --cream: #f5f1e8;
+      --paper: #fffdf9;
+      --white: #ffffff;
+      --ink: #142333;
+      --muted: #687582;
+      --line: rgba(11, 31, 51, .14);
+      --shadow: 0 24px 60px rgba(11, 31, 51, .10);
+      --shadow-soft: 0 12px 32px rgba(11, 31, 51, .08);
+      --radius: 1.25rem;
+      --radius-lg: 2rem;
+      --shell: 74rem;
+      --header-height: 4.75rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 1rem); }
+    body { margin: 0; min-width: 20rem; overflow-x: hidden; color: var(--ink); background: var(--paper); font-family: "Inter", sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    h1, h2, h3, p, ul, figure, blockquote { margin-top: 0; }
+    h1, h2, h3 { font-family: "Poppins", sans-serif; line-height: 1.1; letter-spacing: -.035em; }
+    h1 { margin-bottom: 1.5rem; color: var(--white); font-size: clamp(2.6rem, 11vw, 5.7rem); font-weight: 600; }
+    h1 em { color: var(--gold-light); font-style: normal; }
+    h2 { margin-bottom: 1.25rem; font-size: clamp(2rem, 8vw, 4rem); font-weight: 600; }
+    h3 { font-size: 1.25rem; }
+    :focus-visible { outline: .2rem solid #f1c96e; outline-offset: .22rem; }
+    ::selection { color: var(--navy); background: var(--gold-light); }
+
+    .shell { width: min(calc(100% - 2rem), var(--shell)); margin-inline: auto; }
+    .section { padding: clamp(4.5rem, 10vw, 8rem) 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .skip-link { position: fixed; z-index: 1000; top: .75rem; left: .75rem; padding: .7rem 1rem; color: var(--navy); background: var(--white); border-radius: .5rem; transform: translateY(-180%); }
+    .skip-link:focus { transform: translateY(0); }
+    .eyebrow { display: flex; align-items: center; gap: .7rem; margin-bottom: 1rem; color: var(--gold-light); font-size: .76rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+    .eyebrow::before { width: 1.8rem; height: 1px; content: ""; background: currentColor; }
+    .eyebrow-dark { color: #8a6728; }
+
+    #site-header { position: fixed; z-index: 100; inset: 0 0 auto; height: var(--header-height); color: var(--white); background: rgba(11, 31, 51, .92); border-bottom: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(16px); transition: box-shadow .25s ease, background .25s ease; }
+    #site-header.is-scrolled { background: rgba(11, 31, 51, .98); box-shadow: 0 10px 28px rgba(5, 16, 27, .2); }
+    .nav-shell { position: relative; display: flex; width: min(calc(100% - 2rem), var(--shell)); height: 100%; margin-inline: auto; align-items: center; justify-content: space-between; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; }
+    .brand-mark { display: grid; width: 2.55rem; aspect-ratio: 1; place-items: center; color: var(--navy); background: var(--gold); border-radius: 50%; font-family: "Poppins", sans-serif; font-size: .82rem; font-weight: 700; }
+    .brand-copy { display: grid; line-height: 1.15; }
+    .brand-copy strong { font-family: "Poppins", sans-serif; font-size: .88rem; }
+    .brand-copy small { margin-top: .2rem; color: var(--gold-light); font-size: .62rem; letter-spacing: .12em; }
+    .nav-toggle { display: grid; width: 2.75rem; height: 2.75rem; padding: .72rem; place-content: center; gap: .36rem; color: var(--white); background: transparent; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; cursor: pointer; }
+    .nav-toggle span:not(.sr-only) { display: block; width: 1.15rem; height: 1px; background: currentColor; transition: transform .2s ease; }
+    .nav-open .nav-toggle span:nth-last-child(2) { transform: translateY(.2rem) rotate(45deg); }
+    .nav-open .nav-toggle span:last-child { transform: translateY(-.2rem) rotate(-45deg); }
+    .primary-nav { position: absolute; top: calc(100% + .55rem); right: 0; left: 0; display: grid; visibility: hidden; padding: 1rem; gap: .1rem; opacity: 0; background: var(--white); color: var(--ink); border: 1px solid var(--line); border-radius: 1rem; box-shadow: var(--shadow); transform: translateY(-.5rem); transition: opacity .2s ease, transform .2s ease, visibility .2s; }
+    .nav-open .primary-nav { visibility: visible; opacity: 1; transform: translateY(0); }
+    .primary-nav a { min-height: 2.9rem; padding: .65rem .8rem; border-radius: .6rem; font-size: .9rem; font-weight: 600; }
+    .primary-nav a:hover { background: var(--cream); }
+    .primary-nav .nav-cta { display: grid; margin-top: .35rem; place-items: center; color: var(--navy); background: var(--gold); }
+
+    .hero { position: relative; overflow: hidden; padding: calc(var(--header-height) + 3rem) 0 4rem; color: rgba(255,255,255,.8); background: radial-gradient(circle at 85% 25%, rgba(201,164,92,.16), transparent 32%), linear-gradient(135deg, var(--navy), #071522); }
+    .hero::after { position: absolute; inset: auto -8rem -12rem auto; width: 25rem; aspect-ratio: 1; content: ""; border: 1px solid rgba(201,164,92,.2); border-radius: 50%; }
+    .hero-grid { display: grid; gap: 3rem; align-items: center; }
+    .hero-grid > * { min-width: 0; }
+    .hero-copy { position: relative; z-index: 2; }
+    .hero-lede { overflow-wrap: anywhere; }
+    .hero-lede { max-width: 38rem; margin-bottom: 1.7rem; font-size: clamp(1rem, 3vw, 1.18rem); }
+    .hero-actions { display: flex; flex-direction: column; gap: .75rem; }
+    .hero-actions .button { max-width: 100%; }
+    .button { display: inline-flex; min-height: 3.25rem; padding: .78rem 1.2rem; align-items: center; justify-content: center; gap: .7rem; border: 1px solid transparent; border-radius: 999px; font-weight: 600; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-gold { color: var(--navy); background: var(--gold); box-shadow: 0 12px 25px rgba(201,164,92,.18); }
+    .button-gold:hover { background: #d8b771; box-shadow: 0 16px 32px rgba(201,164,92,.25); }
+    .button-quiet { color: var(--white); background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.25); }
+    .hero-credential { display: grid; margin: 1.8rem 0 0; gap: .1rem; color: var(--white); }
+    .hero-credential span { color: rgba(255,255,255,.55); font-size: .78rem; letter-spacing: .03em; }
+    .hero-visual { position: relative; width: min(100%, 30rem); margin-inline: auto; }
+    .portrait-frame { position: relative; z-index: 1; overflow: hidden; aspect-ratio: 4 / 5; background: var(--navy-2); border: 1px solid rgba(255,255,255,.14); border-radius: 12rem 12rem var(--radius-lg) var(--radius-lg); box-shadow: 0 30px 70px rgba(0,0,0,.32); }
+    .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: saturate(.8); }
+    .portrait-frame::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, transparent 55%, rgba(7,21,34,.86)); }
+    .portrait-caption { position: absolute; z-index: 2; right: 1.2rem; bottom: 1.2rem; left: 1.2rem; display: grid; color: var(--white); line-height: 1.25; }
+    .portrait-caption span { color: var(--gold-light); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; }
+    .portrait-caption strong { margin-top: .35rem; font-family: "Poppins", sans-serif; font-size: 1.05rem; }
+    .visual-ring { position: absolute; top: 10%; right: -10%; width: 62%; aspect-ratio: 1; border: 1px solid var(--gold); border-radius: 50%; }
+
+    .about { background: var(--paper); }
+    .about-grid { display: grid; gap: 1.2rem; }
+    .about-copy { max-width: 39rem; color: var(--muted); font-size: 1.02rem; }
+    .stats { display: grid; margin-top: 2.5rem; border-block: 1px solid var(--line); }
+    .stat { display: grid; padding: 1.5rem .25rem; align-items: center; grid-template-columns: 7rem 1fr; border-bottom: 1px solid var(--line); }
+    .stat:last-child { border-bottom: 0; }
+    .stat strong { color: var(--navy); font-family: "Poppins", sans-serif; font-size: clamp(2rem, 9vw, 3.3rem); line-height: 1; }
+    .stat span { color: var(--muted); font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; }
+
+    .listings { background: var(--cream); }
+    .section-heading { display: flex; margin-bottom: 2rem; flex-direction: column; gap: .5rem; }
+    .section-heading > p { max-width: 29rem; color: var(--muted); }
+    .listing-grid { display: grid; gap: 1.25rem; }
+    .property-card { overflow: hidden; background: var(--white); border: 1px solid rgba(11,31,51,.08); border-radius: var(--radius); box-shadow: var(--shadow-soft); transition: transform .25s ease, box-shadow .25s ease; }
+    .property-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .property-media { position: relative; overflow: hidden; aspect-ratio: 3 / 2; background: #dfe4e7; }
+    .property-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+    .property-card:hover .property-media img { transform: scale(1.025); }
+    .property-tag { position: absolute; top: .8rem; left: .8rem; padding: .4rem .7rem; color: var(--white); background: rgba(11,31,51,.9); border-radius: 999px; font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; }
+    .property-body { padding: 1.35rem; }
+    .property-location { margin-bottom: .35rem; color: #8a6728; font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+    .property-body h3 { min-height: 2.7rem; margin-bottom: .8rem; }
+    .property-price { margin-bottom: 1.15rem; color: var(--navy); font-family: "Poppins", sans-serif; font-size: 1.35rem; font-weight: 600; }
+    .property-facts { display: grid; padding: .9rem 0; margin: 0 0 1rem; list-style: none; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
+    .property-facts li { display: grid; color: var(--muted); font-size: .68rem; text-align: center; }
+    .property-facts li + li { border-left: 1px solid var(--line); }
+    .property-facts strong { color: var(--ink); font-size: .9rem; }
+    .property-note { min-height: 3.4rem; color: var(--muted); font-size: .88rem; }
+    .property-link { display: inline-flex; align-items: center; gap: .5rem; color: var(--navy); font-size: .84rem; font-weight: 700; border-bottom: 1px solid var(--gold); }
+
+    .why { color: var(--white); background: var(--navy); }
+    .why h2 { max-width: 46rem; }
+    .reason-grid { display: grid; margin-top: 2.5rem; gap: 1rem; }
+    .reason { padding: 1.5rem; background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); }
+    .reason-number { display: block; margin-bottom: 2.2rem; color: var(--gold); font-family: "Poppins", sans-serif; font-size: .75rem; letter-spacing: .1em; }
+    .reason h3 { color: var(--white); }
+    .reason p { margin-bottom: 0; color: rgba(255,255,255,.62); font-size: .9rem; }
+
+    .testimonials { background: var(--paper); }
+    .testimonial-grid { display: grid; margin-top: 2rem; gap: 1.25rem; }
+    .testimonial-card { position: relative; padding: 2rem 1.5rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-soft); }
+    .testimonial-card::before { display: block; margin-bottom: .8rem; content: "“"; color: var(--gold); font-family: Georgia, serif; font-size: 4rem; line-height: .6; }
+    .testimonial-card blockquote { margin-bottom: 1.5rem; font-family: "Poppins", sans-serif; font-size: clamp(1.05rem, 4vw, 1.3rem); line-height: 1.55; }
+    .testimonial-card figcaption { display: grid; color: var(--muted); font-size: .78rem; }
+    .testimonial-card figcaption strong { color: var(--ink); font-size: .9rem; }
+
+    .contact { color: var(--white); background: linear-gradient(145deg, #0b1f33, #102a44); }
+    .contact-grid { display: grid; gap: 2.5rem; }
+    .contact-copy > p:not(.eyebrow) { max-width: 31rem; color: rgba(255,255,255,.65); }
+    .contact-phone { display: inline-grid; margin-top: 1rem; }
+    .contact-phone span { color: var(--gold-light); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-phone strong { color: var(--white); font-family: "Poppins", sans-serif; font-size: 1.25rem; }
+    .lead-form { padding: 1.3rem; color: var(--ink); background: var(--white); border-radius: var(--radius); box-shadow: 0 28px 70px rgba(0,0,0,.2); }
+    .field { display: grid; margin-bottom: 1rem; gap: .35rem; }
+    .field label { font-size: .78rem; font-weight: 700; }
+    .field input, .field textarea { width: 100%; padding: .8rem .9rem; color: var(--ink); background: #fbfaf7; border: 1px solid var(--line); border-radius: .7rem; outline: 0; }
+    .field input:focus, .field textarea:focus { border-color: #9f792f; box-shadow: 0 0 0 3px rgba(201,164,92,.2); }
+    .field input.field-error, .field textarea.field-error { border-color: #a43a3a; }
+    .field-message { min-height: 1rem; color: #9b2929; font-size: .7rem; }
+    .lead-form .button { width: 100%; border: 0; }
+    .form-status { min-height: 1.4rem; margin: .7rem 0 0; color: var(--muted); font-size: .78rem; text-align: center; }
+
+    .faq { background: var(--cream); }
+    .faq-grid { display: grid; gap: 2rem; }
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { position: relative; padding: 1.3rem 2.3rem 1.3rem 0; font-family: "Poppins", sans-serif; font-size: .98rem; font-weight: 600; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { position: absolute; top: 1.1rem; right: .2rem; display: grid; width: 1.8rem; aspect-ratio: 1; content: "+"; place-items: center; color: var(--navy); border: 1px solid var(--line); border-radius: 50%; }
+    details[open] summary::after { content: "−"; }
+    details p { padding-right: 2rem; margin-bottom: 1.4rem; color: var(--muted); font-size: .9rem; }
+
+    .footer { padding: 2.5rem 0 6rem; color: rgba(255,255,255,.55); background: #071522; font-size: .72rem; }
+    .footer-grid { display: grid; gap: 1.4rem; }
+    .footer p { margin-bottom: 0; }
+    .footer-name { color: var(--white); font-family: "Poppins", sans-serif; font-size: 1.1rem; font-weight: 600; }
+    .whatsapp-float { position: fixed; z-index: 90; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); display: inline-flex; min-width: 3.5rem; min-height: 3.5rem; padding: .8rem; align-items: center; justify-content: center; gap: .55rem; color: var(--white); background: #177c49; border: 2px solid rgba(255,255,255,.8); border-radius: 999px; box-shadow: 0 12px 30px rgba(0,0,0,.25); transition: transform .2s ease, background .2s ease; }
+    .whatsapp-float:hover { background: #11693d; transform: translateY(-3px); }
+    .whatsapp-float span { display: none; font-size: .78rem; font-weight: 700; }
+
+    @media (min-width: 36rem) {
+      .hero-actions { flex-direction: row; }
+      .button { padding-inline: 1.4rem; }
+      .whatsapp-float span { display: inline; }
+    }
+
+    @media (min-width: 48rem) {
+      .shell { width: min(calc(100% - 4rem), var(--shell)); }
+      .about-grid { grid-template-columns: .85fr 1.15fr; gap: 4rem; }
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .stat { padding: 2rem; grid-template-columns: 1fr; gap: .75rem; border-right: 1px solid var(--line); border-bottom: 0; }
+      .stat:last-child { border-right: 0; }
+      .section-heading { align-items: end; justify-content: space-between; flex-direction: row; }
+      .listing-grid { grid-template-columns: repeat(2, 1fr); }
+      .property-card:last-child { grid-column: 1 / -1; width: calc(50% - .625rem); justify-self: center; }
+      .reason-grid { grid-template-columns: repeat(3, 1fr); }
+      .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: .9fr 1.1fr; align-items: center; gap: 4rem; }
+      .lead-form { padding: 2rem; }
+      .faq-grid { grid-template-columns: .75fr 1.25fr; gap: 4rem; }
+      .footer-grid { grid-template-columns: 1fr 1.5fr 1fr; align-items: end; }
+      .footer-grid > :last-child { text-align: right; }
+    }
+
+    @media (min-width: 64rem) {
+      :root { --header-height: 5.25rem; }
+      .nav-toggle { display: none; }
+      .primary-nav { position: static; display: flex; visibility: visible; padding: 0; align-items: center; gap: .15rem; opacity: 1; color: rgba(255,255,255,.78); background: transparent; border: 0; border-radius: 0; box-shadow: none; transform: none; }
+      .primary-nav a { display: inline-flex; min-height: 2.7rem; padding: .55rem .65rem; align-items: center; }
+      .primary-nav a:hover { color: var(--white); background: rgba(255,255,255,.06); }
+      .primary-nav .nav-cta { margin: 0 0 0 .6rem; padding-inline: 1.15rem; color: var(--navy); }
+      .hero { min-height: 48rem; padding: calc(var(--header-height) + 4rem) 0 5rem; }
+      .hero-grid { grid-template-columns: minmax(0, 1.18fr) minmax(20rem, .82fr); gap: 5rem; }
+      .hero-visual { width: min(100%, 27rem); }
+      .listing-grid { grid-template-columns: repeat(3, 1fr); }
+      .property-card:last-child { grid-column: auto; width: auto; }
+      .property-body { padding: 1.6rem; }
+      .reason { padding: 2rem; }
+      .testimonial-card { padding: 2.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+
+  <!-- EDIT: Keep structured-data values synchronized with visible page content. JSON cannot contain comments. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "RealEstateAgent",
+        "@id": "https://example.com/calvin-yong#agent",
+        "name": "Calvin Yong",
+        "jobTitle": "Real Estate Negotiator",
+        "identifier": "REN80547",
+        "url": "https://example.com/calvin-yong",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85",
+        "telephone": "+60183138136",
+        "description": "Real estate guidance for condos, commercial shoplots and investment properties.",
+        "areaServed": [
+          { "@type": "Place", "name": "Bandar Sunway" },
+          { "@type": "Place", "name": "Desa Petaling" },
+          { "@type": "Place", "name": "Happy Garden" },
+          { "@type": "Place", "name": "Kuchai Lama" }
+        ],
+        "knowsAbout": ["Condominiums", "Commercial shoplots", "Property investment"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://example.com/calvin-yong#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which areas does Calvin serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calvin focuses on Bandar Sunway, Desa Petaling, Happy Garden and Kuchai Lama, while also discussing suitable opportunities in nearby areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of property can Calvin help me find?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calvin specialises in condominiums, commercial shoplots and investment properties for local buyers, expatriate families and investors."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens during the first consultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calvin will learn about your preferred area, budget, timeline and property requirements, then suggest practical next steps for your search."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header id="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <!-- EDIT: Brand name and home link -->
+      <a class="brand" href="#top" aria-label="Calvin Yong home">
+        <span class="brand-mark" aria-hidden="true">CY</span>
+        <span class="brand-copy"><strong>Calvin Yong</strong><small>REN80547</small></span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Open navigation</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <div id="primary-nav" class="primary-nav">
+        <a href="#about">About</a>
+        <a href="#listings">Properties</a>
+        <a href="#why">Why Calvin</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <!-- EDIT: Navigation WhatsApp message -->
+        <a class="nav-cta" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27d%20like%20help%20finding%20a%20property." target="_blank" rel="noopener noreferrer">WhatsApp Calvin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <!-- EDIT: Hero eyebrow -->
+          <p class="eyebrow">Your local property guide</p>
+          <!-- EDIT: Main promise -->
+          <h1 id="hero-title">Find the right property.<br><em>Move with confidence.</em></h1>
+          <!-- EDIT: Hero introduction -->
+          <p class="hero-lede">Personal, clear-headed guidance for homebuyers and investors exploring Kuala Lumpur's most connected neighbourhoods.</p>
+          <div class="hero-actions">
+            <!-- EDIT: Primary WhatsApp CTA message -->
+            <a class="button button-gold" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27d%20like%20help%20finding%20a%20property." target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span aria-hidden="true">↗</span></a>
+            <!-- EDIT: Secondary CTA label and destination -->
+            <a class="button button-quiet" href="#listings">Explore properties <span aria-hidden="true">↓</span></a>
+          </div>
+          <!-- EDIT: Agent identity -->
+          <p class="hero-credential"><strong>Calvin Yong</strong><span>Real Estate Negotiator · REN80547</span></p>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <!-- EDIT: Replace this placeholder portrait URL and alt text with Calvin's professional headshot -->
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200" height="1500" alt="Professional placeholder portrait for Calvin Yong" fetchpriority="high">
+            <div class="portrait-caption">
+              <!-- EDIT: Portrait caption -->
+              <span>Focused on</span><strong>People, property<br>&amp; potential.</strong>
+            </div>
+          </div>
+          <span class="visual-ring" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div>
+          <!-- EDIT: About eyebrow -->
+          <p class="eyebrow eyebrow-dark">A clearer way to buy</p>
+          <!-- EDIT: About heading -->
+          <h2 id="about-title">Local knowledge.<br>Personal attention.</h2>
+        </div>
+        <div class="about-copy">
+          <!-- EDIT: About paragraph 1 -->
+          <p>Property decisions deserve more than a list of links. Calvin helps you compare locations, layouts and long-term potential with advice shaped around your priorities.</p>
+          <!-- EDIT: About paragraph 2 -->
+          <p>Whether you are buying a family home or evaluating your next investment, expect direct communication and a practical path forward.</p>
+        </div>
+      </div>
+      <div class="shell stats" aria-label="Areas of focus">
+        <!-- EDIT: SAMPLE STAT — replace with a verified statistic before publication -->
+        <div class="stat"><strong>4</strong><span>Focus areas</span></div>
+        <!-- EDIT: SAMPLE STAT — replace with a verified statistic before publication -->
+        <div class="stat"><strong>3</strong><span>Property types</span></div>
+        <!-- EDIT: SAMPLE STAT — replace with a verified statistic before publication -->
+        <div class="stat"><strong>1-to-1</strong><span>Direct guidance</span></div>
+      </div>
+    </section>
+
+    <section id="listings" class="section listings" aria-labelledby="listings-title">
+      <div class="shell section-heading">
+        <div>
+          <!-- EDIT: Listings eyebrow -->
+          <p class="eyebrow eyebrow-dark">Selected opportunities</p>
+          <!-- EDIT: Listings heading -->
+          <h2 id="listings-title">Featured properties</h2>
+        </div>
+        <!-- EDIT: Listings introduction -->
+        <p>A curated starting point for living well and investing thoughtfully.</p>
+      </div>
+      <div class="shell listing-grid">
+        <!-- EDIT: SAMPLE LISTING — replace every field and image with a current verified listing before publication -->
+        <article class="property-card">
+          <div class="property-media">
+            <!-- EDIT: Listing 1 image URL and alt text -->
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200" height="800" loading="lazy" alt="Bright contemporary condominium living room">
+            <!-- EDIT: Listing 1 type -->
+            <span class="property-tag">Condominium</span>
+          </div>
+          <div class="property-body">
+            <!-- EDIT: Listing 1 area -->
+            <p class="property-location">Bandar Sunway</p>
+            <!-- EDIT: Listing 1 name -->
+            <h3>Sunway Geo Residences</h3>
+            <!-- EDIT: Listing 1 price -->
+            <p class="property-price">RM 880,000</p>
+            <!-- EDIT: Listing 1 property facts -->
+            <ul class="property-facts" aria-label="Property details"><li><strong>3</strong> Beds</li><li><strong>2</strong> Baths</li><li><strong>1,076</strong> sq ft</li></ul>
+            <!-- EDIT: Listing 1 description -->
+            <p class="property-note">Connected urban living with space for the whole family.</p>
+            <!-- EDIT: Listing 1 WhatsApp message -->
+            <a class="property-link" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27m%20interested%20in%20the%20Sunway%20Geo%20Residences%20sample%20listing." target="_blank" rel="noopener noreferrer">Enquire about this property <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- EDIT: SAMPLE LISTING — replace every field and image with a current verified listing before publication -->
+        <article class="property-card">
+          <div class="property-media">
+            <!-- EDIT: Listing 2 image URL and alt text -->
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200" height="800" loading="lazy" alt="Modern commercial workspace with glass partitions">
+            <!-- EDIT: Listing 2 type -->
+            <span class="property-tag">Commercial</span>
+          </div>
+          <div class="property-body">
+            <!-- EDIT: Listing 2 area -->
+            <p class="property-location">Kuchai Lama</p>
+            <!-- EDIT: Listing 2 name -->
+            <h3>Kuchai Entrepreneurs Park Shoplot</h3>
+            <!-- EDIT: Listing 2 price -->
+            <p class="property-price">RM 2,380,000</p>
+            <!-- EDIT: Listing 2 property facts -->
+            <ul class="property-facts" aria-label="Property details"><li><strong>3</strong> Levels</li><li><strong>2</strong> Baths</li><li><strong>4,950</strong> sq ft</li></ul>
+            <!-- EDIT: Listing 2 description -->
+            <p class="property-note">A versatile commercial address in an established business hub.</p>
+            <!-- EDIT: Listing 2 WhatsApp message -->
+            <a class="property-link" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27m%20interested%20in%20the%20Kuchai%20Entrepreneurs%20Park%20sample%20listing." target="_blank" rel="noopener noreferrer">Enquire about this property <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <!-- EDIT: SAMPLE LISTING — replace every field and image with a current verified listing before publication -->
+        <article class="property-card">
+          <div class="property-media">
+            <!-- EDIT: Listing 3 image URL and alt text -->
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200" height="800" loading="lazy" alt="Warm modern condominium dining and living area">
+            <!-- EDIT: Listing 3 type -->
+            <span class="property-tag">Investment</span>
+          </div>
+          <div class="property-body">
+            <!-- EDIT: Listing 3 area -->
+            <p class="property-location">Desa Petaling</p>
+            <!-- EDIT: Listing 3 name -->
+            <h3>The Address</h3>
+            <!-- EDIT: Listing 3 price -->
+            <p class="property-price">RM 620,000</p>
+            <!-- EDIT: Listing 3 property facts -->
+            <ul class="property-facts" aria-label="Property details"><li><strong>3</strong> Beds</li><li><strong>2</strong> Baths</li><li><strong>1,023</strong> sq ft</li></ul>
+            <!-- EDIT: Listing 3 description -->
+            <p class="property-note">A well-positioned residence with practical rental appeal.</p>
+            <!-- EDIT: Listing 3 WhatsApp message -->
+            <a class="property-link" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27m%20interested%20in%20The%20Address%20sample%20listing." target="_blank" rel="noopener noreferrer">Enquire about this property <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="section why" aria-labelledby="why-title">
+      <div class="shell">
+        <!-- EDIT: Why-me eyebrow -->
+        <p class="eyebrow">Why work with Calvin</p>
+        <!-- EDIT: Why-me heading -->
+        <h2 id="why-title">Good decisions start<br>with the right guidance.</h2>
+        <div class="reason-grid">
+          <article class="reason">
+            <span class="reason-number" aria-hidden="true">01</span>
+            <!-- EDIT: Reason 1 heading and copy -->
+            <h3>Neighbourhood insight</h3><p>Understand the character, connectivity and practical trade-offs of each area before you shortlist.</p>
+          </article>
+          <article class="reason">
+            <span class="reason-number" aria-hidden="true">02</span>
+            <!-- EDIT: Reason 2 heading and copy -->
+            <h3>Buyer-first clarity</h3><p>Compare your options against your own budget, timeline and priorities—not someone else's agenda.</p>
+          </article>
+          <article class="reason">
+            <span class="reason-number" aria-hidden="true">03</span>
+            <!-- EDIT: Reason 3 heading and copy -->
+            <h3>Responsive support</h3><p>Get direct, practical communication from first enquiry through viewings and next steps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="shell">
+        <!-- EDIT: Testimonials eyebrow -->
+        <p class="eyebrow eyebrow-dark">Client perspective</p>
+        <!-- EDIT: Testimonials heading -->
+        <h2 id="testimonials-title">Guidance that feels personal.</h2>
+        <div class="testimonial-grid">
+          <!-- EDIT: SAMPLE TESTIMONIAL — replace with a genuine, approved client quote before publication -->
+          <figure class="testimonial-card">
+            <blockquote>“Calvin helped us compare several areas without pressure. His clear explanations made our first home search feel far more manageable.”</blockquote>
+            <!-- EDIT: Sample testimonial attribution -->
+            <figcaption><strong>Amanda L.</strong><span>First-time homebuyer</span></figcaption>
+          </figure>
+          <!-- EDIT: SAMPLE TESTIMONIAL — replace with a genuine, approved client quote before publication -->
+          <figure class="testimonial-card">
+            <blockquote>“I appreciated the straightforward discussion about rental demand, layout and exit potential. It gave me a better framework for deciding.”</blockquote>
+            <!-- EDIT: Sample testimonial attribution -->
+            <figcaption><strong>Jason T.</strong><span>Property investor</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div class="contact-copy">
+          <!-- EDIT: Contact eyebrow -->
+          <p class="eyebrow">Start your search</p>
+          <!-- EDIT: Contact heading -->
+          <h2 id="contact-title">Tell me what you are looking for.</h2>
+          <!-- EDIT: Contact introduction -->
+          <p>Share your preferred area, budget and must-haves. Calvin will continue the conversation with you directly on WhatsApp.</p>
+          <!-- EDIT: Display phone number and direct link -->
+          <a class="contact-phone" href="https://wa.me/60183138136" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+60 18-313 8136</strong></a>
+        </div>
+        <form id="lead-form" class="lead-form" novalidate>
+          <div class="field">
+            <label for="lead-name">Your name</label>
+            <!-- EDIT: Name field placeholder -->
+            <input id="lead-name" name="name" type="text" autocomplete="name" placeholder="e.g. Sarah Lim" required>
+            <span class="field-message" id="lead-name-error"></span>
+          </div>
+          <div class="field">
+            <label for="lead-phone">Phone number</label>
+            <!-- EDIT: Phone field placeholder -->
+            <input id="lead-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. +60 12-345 6789" required>
+            <span class="field-message" id="lead-phone-error"></span>
+          </div>
+          <div class="field">
+            <label for="lead-message">What are you looking for?</label>
+            <!-- EDIT: Message field placeholder -->
+            <textarea id="lead-message" name="message" rows="5" placeholder="Area, budget, property type and timeline" required></textarea>
+            <span class="field-message" id="lead-message-error"></span>
+          </div>
+          <!-- EDIT: Form submit label -->
+          <button class="button button-gold" type="submit">Send via WhatsApp <span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <noscript><p>JavaScript is unavailable. <a href="https://wa.me/60183138136" target="_blank" rel="noopener noreferrer">Contact Calvin directly on WhatsApp.</a></p></noscript>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq" aria-labelledby="faq-title">
+      <div class="shell faq-grid">
+        <div>
+          <!-- EDIT: FAQ eyebrow -->
+          <p class="eyebrow eyebrow-dark">Common questions</p>
+          <!-- EDIT: FAQ heading -->
+          <h2 id="faq-title">Before we begin.</h2>
+        </div>
+        <div class="faq-list">
+          <!-- EDIT: Keep this visible FAQ exactly synchronized with JSON-LD -->
+          <details><summary>Which areas does Calvin serve?</summary><p>Calvin focuses on Bandar Sunway, Desa Petaling, Happy Garden and Kuchai Lama, while also discussing suitable opportunities in nearby areas.</p></details>
+          <!-- EDIT: Keep this visible FAQ exactly synchronized with JSON-LD -->
+          <details><summary>What types of property can Calvin help me find?</summary><p>Calvin specialises in condominiums, commercial shoplots and investment properties for local buyers, expatriate families and investors.</p></details>
+          <!-- EDIT: Keep this visible FAQ exactly synchronized with JSON-LD -->
+          <details><summary>What happens during the first consultation?</summary><p>Calvin will learn about your preferred area, budget, timeline and property requirements, then suggest practical next steps for your search.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>
+        <!-- EDIT: Footer identity -->
+        <p class="footer-name">Calvin Yong</p>
+        <p>Real Estate Negotiator · REN80547</p>
+      </div>
+      <!-- EDIT: Footer specialty and service areas -->
+      <p>Condos · Commercial Shoplots · Investment<br>Bandar Sunway · Desa Petaling · Happy Garden · Kuchai Lama</p>
+      <!-- EDIT: Footer copyright owner -->
+      <p>© <span id="footer-year">2026</span> Calvin Yong. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- EDIT: Floating WhatsApp label and prefilled message -->
+  <a class="whatsapp-float" href="https://wa.me/60183138136?text=Hi%20Calvin%2C%20I%27d%20like%20help%20finding%20a%20property." target="_blank" rel="noopener noreferrer" aria-label="Chat with Calvin on WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 32 32" width="26" height="26"><path fill="currentColor" d="M16 3a12.7 12.7 0 0 0-11 19l-1.5 5.5 5.7-1.5A12.8 12.8 0 1 0 16 3Zm0 23.2c-2.2 0-4.2-.6-6-1.7l-.4-.2-3.4.9.9-3.3-.2-.4A10.5 10.5 0 1 1 16 26.2Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.3c-.2-.3 0-.5.1-.7l.5-.6.3-.6c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.6-.5-.8-.5h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.4-.3-.7-.4Z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const header = document.getElementById('site-header');
+      const navToggle = document.getElementById('nav-toggle');
+      const primaryNav = document.getElementById('primary-nav');
+      const navLabel = navToggle.querySelector('.sr-only');
+      const leadForm = document.getElementById('lead-form');
+      const formStatus = document.getElementById('form-status');
+      const desktopQuery = window.matchMedia('(min-width: 64rem)');
+
+      function setMenu(open) {
+        const shouldOpen = Boolean(open) && !desktopQuery.matches;
+        document.body.classList.toggle('nav-open', shouldOpen);
+        navToggle.setAttribute('aria-expanded', String(shouldOpen));
+        navLabel.textContent = shouldOpen ? 'Close navigation' : 'Open navigation';
+      }
+
+      function buildWhatsAppUrl(name, phone, message) {
+        const text = [
+          'Hi Calvin, I would like help finding a property.',
+          `Name: ${name.trim()}`,
+          `Phone: ${phone.trim()}`,
+          `Requirements: ${message.trim()}`
+        ].join('\n');
+        return `https://wa.me/60183138136?text=${encodeURIComponent(text)}`;
+      }
+
+      function clearFieldError(field) {
+        field.classList.remove('field-error');
+        field.removeAttribute('aria-invalid');
+        field.removeAttribute('aria-describedby');
+        const message = document.getElementById(`${field.id}-error`);
+        if (message) message.textContent = '';
+      }
+
+      function showFieldError(field) {
+        const message = document.getElementById(`${field.id}-error`);
+        const label = field.labels && field.labels[0] ? field.labels[0].textContent : 'This field';
+        field.classList.add('field-error');
+        field.setAttribute('aria-invalid', 'true');
+        if (message) {
+          message.textContent = `${label} is required.`;
+          field.setAttribute('aria-describedby', message.id);
+        }
+      }
+
+      navToggle.addEventListener('click', () => {
+        setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      primaryNav.addEventListener('click', (event) => {
+        if (event.target.closest('a')) setMenu(false);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          navToggle.focus();
+        }
+      });
+
+      const closeAtDesktop = () => setMenu(false);
+      if (typeof desktopQuery.addEventListener === 'function') {
+        desktopQuery.addEventListener('change', closeAtDesktop);
+      } else {
+        desktopQuery.addListener(closeAtDesktop);
+      }
+
+      const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
+      updateHeader();
+      window.addEventListener('scroll', updateHeader, { passive: true });
+
+      leadForm.querySelectorAll('input, textarea').forEach((field) => {
+        field.addEventListener('input', () => {
+          if (field.value.trim()) clearFieldError(field);
+        });
+      });
+
+      leadForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const fields = [
+          document.getElementById('lead-name'),
+          document.getElementById('lead-phone'),
+          document.getElementById('lead-message')
+        ];
+
+        fields.forEach(clearFieldError);
+        const invalidFields = fields.filter((field) => !field.value.trim());
+        if (invalidFields.length) {
+          invalidFields.forEach(showFieldError);
+          formStatus.textContent = 'Please complete the highlighted fields.';
+          invalidFields[0].focus();
+          return;
+        }
+
+        formStatus.textContent = 'Opening WhatsApp with your enquiry…';
+        const url = buildWhatsAppUrl(fields[0].value, fields[1].value, fields[2].value);
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (!newWindow) window.location.href = url;
+      });
+
+      document.getElementById('footer-year').textContent = String(new Date().getFullYear());
+
+      // Expose pure helpers for lightweight verification without changing page behavior.
+      window.CalvinLanding = { setMenu, buildWhatsAppUrl };
+    })();
+  </script>
+</body>
+</html>
+

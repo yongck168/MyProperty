@@ -1,0 +1,9 @@
+const esc=(s:string)=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
+export function renderAccessGate(error=''){
+ return `<!doctype html><html lang="en-MY"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Access My Property listings</title>
+ <style>body{margin:0;font:16px Inter,system-ui;background:#0b1f33;color:#142333}.card{max-width:480px;margin:8vh auto;padding:32px;background:#fff;border-radius:24px}label{display:block;margin:18px 0 6px}input{width:100%;padding:12px;box-sizing:border-box}.consent{display:flex;gap:10px}.consent input{width:auto}button{margin-top:20px;padding:13px 22px;border:0;border-radius:30px;background:#c9a45c;font-weight:700}.error{color:#a00020}</style></head><body><main class="card"><h1>View Calvin Yong’s property listings</h1><p>Enter your details to continue.</p>
+ ${error?`<p class="error" role="alert">${esc(error)}</p>`:''}<form method="post" action="/access"><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"><label for="mobile">Malaysian mobile number</label><input id="mobile" name="mobile" required inputmode="tel" autocomplete="tel"><label class="consent"><input name="consent" type="checkbox" value="yes" required><span>I consent to Calvin Yong of The Roof Realty contacting me about property enquiries.</span></label><button>View listings</button></form></main></body></html>`;
+}
+export function renderProtectedShell(content:string){
+ return `<!doctype html><html lang="en-MY"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Calvin Yong | My Property</title></head><body><header><strong>Calvin Yong | REN 80547 | The Roof Realty</strong></header>${content}<a href="https://wa.me/60183138136">WhatsApp me</a></body></html>`;
+}

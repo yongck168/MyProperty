@@ -1,0 +1,14 @@
+name = "calvin-yong-myproperty"
+main = "app/worker.ts"
+compatibility_date = "2026-10-09"
+
+[assets]
+directory = "./static"
+binding = "ASSETS"
+run_worker_first = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "calvin-myproperty-preview"
+database_id = "CONFIGURE_IN_HOSTING"
+migrations_dir = "migrations"

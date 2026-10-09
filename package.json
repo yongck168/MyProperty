@@ -1,0 +1,18 @@
+{
+  "name": "calvin-yong-myproperty",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "check:migration": "node scripts/check-migration.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261009.1",
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.149.0"
+  }
+}

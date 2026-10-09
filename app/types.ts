@@ -1,0 +1,18 @@
+export interface Env {
+  DB: D1Database;
+  ASSETS?: Fetcher;
+  OWNER_EMAIL: string;
+  EMAIL_FROM: string;
+  SITE_ORIGIN: string;
+  CONSENT_TEXT_VERSION: string;
+  PRIVACY_POLICY_VERSION: string;
+  VISITOR_SESSION_DAYS: string;
+  OWNER_SESSION_HOURS: string;
+  OTP_TTL_MINUTES: string;
+  VISITOR_SESSION_SECRET_CURRENT: string;
+  VISITOR_SESSION_SECRET_PREVIOUS?: string;
+  OWNER_SESSION_SECRET_CURRENT: string;
+  OWNER_SESSION_SECRET_PREVIOUS?: string;
+  OTP_PEPPER: string;
+  RESEND_API_KEY: string;
+}

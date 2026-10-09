@@ -1,0 +1,12 @@
+OWNER_EMAIL=calvin-owner@example.com
+EMAIL_FROM=My Property <access@example.com>
+SITE_ORIGIN=https://example.com
+CONSENT_TEXT_VERSION=2026-10-09-v1
+PRIVACY_POLICY_VERSION=2026-10-09-v1
+VISITOR_SESSION_DAYS=180
+OWNER_SESSION_HOURS=12
+OTP_TTL_MINUTES=10
+VISITOR_SESSION_SECRET_CURRENT=replace-with-32-random-bytes
+OWNER_SESSION_SECRET_CURRENT=replace-with-a-different-32-random-bytes
+OTP_PEPPER=replace-with-32-random-bytes
+RESEND_API_KEY=replace-with-provider-key
